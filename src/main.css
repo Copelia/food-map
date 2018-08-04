@@ -1,0 +1,23 @@
+body {
+    background-image: url('https://i.pinimg.com/564x/0c/5b/36/0c5b36cd561e166d905b72325f202259.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+	background-size: contain;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.welcome {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 10em;
+    color: #333333;
+    text-align: center;
+
+}
+
+
+
