@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,32 +9,27 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
     <!-- Hoja donde se carga el splash -->
     <script type="text/javascript">
       window.onload=timeout;
 
 //Cuando paso esta función a tipo arrow, window onload no se dispara
 function timeout () {
-window.setTimeout("redirect()",1000)
+window.setTimeout("redirect()",2000)
 }
 
 const redirect = () => {
 window.location="index.html"
 return
 }
-
     </script>
 </head>
 
 <body onload="timeout()">
-
     <div class="text">
         <div class="welcome">
             <h1>FOOD MAP</h1>
         </div>
     </div>
-
 </body>
-
 </html>
