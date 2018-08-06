@@ -1,0 +1,253 @@
+{
+    "response": {
+      "venues": [
+        {
+          "id": "4fb82d46e4b056d06a376aa9",
+          "name": "Salón China Restaurante",
+          "contact": {},
+          "location": {
+            "address": "Republica de Uruguay",
+            "crossStreet": "Bolivar",
+            "lat": 19.430769674731515,
+            "lng": -99.13840955582573,
+            "labeledLatLngs": [
+              {
+                "label": "display",
+                "lat": 19.430769674731515,
+                "lng": -99.13840955582573
+              }
+            ],
+            "distance": 886,
+            "cc": "MX",
+            "city": "Ciudad de México",
+            "state": "Distrito Federal",
+            "country": "México",
+            "formattedAddress": [
+              "Republica de Uruguay (Bolivar)",
+              "Ciudad de México, Distrito Federal",
+              "México"
+            ]
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d145941735",
+              "name": "Restaurante chino",
+              "pluralName": "Restaurantes chinos",
+              "shortName": "China",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                "suffix": ".png"
+              },
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "tipCount": 0,
+            "usersCount": 0,
+            "checkinsCount": 0,
+            "visitsCount": 0
+          },
+          "beenHere": {
+            "count": 0,
+            "lastCheckinExpiredAt": 0,
+            "marked": false,
+            "unconfirmedCount": 0
+          },
+          "hereNow": {
+            "count": 0,
+            "summary": "Nadie aquí",
+            "groups": []
+          },
+          "referralId": "v-1533512704",
+          "venueChains": [],
+          "hasPerk": false
+        },
+        {
+          "id": "4e21eeb152b1f82ffba40866",
+          "name": "Comida China :-)",
+          "contact": {},
+          "location": {
+            "lat": 19.428238006684065,
+            "lng": -99.13270646964465,
+            "labeledLatLngs": [
+              {
+                "label": "display",
+                "lat": 19.428238006684065,
+                "lng": -99.13270646964465
+              }
+            ],
+            "distance": 345,
+            "cc": "MX",
+            "city": "Ciudad de México",
+            "state": "Distrito Federal",
+            "country": "México",
+            "formattedAddress": [
+              "Ciudad de México, Distrito Federal",
+              "México"
+            ]
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d142941735",
+              "name": "Restaurante asiático",
+              "pluralName": "Restaurantes asiáticos",
+              "shortName": "Asiática",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                "suffix": ".png"
+              },
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "tipCount": 0,
+            "usersCount": 0,
+            "checkinsCount": 0,
+            "visitsCount": 0
+          },
+          "beenHere": {
+            "count": 0,
+            "lastCheckinExpiredAt": 0,
+            "marked": false,
+            "unconfirmedCount": 0
+          },
+          "hereNow": {
+            "count": 0,
+            "summary": "Nadie aquí",
+            "groups": []
+          },
+          "referralId": "v-1533512704",
+          "venueChains": [],
+          "hasPerk": false
+        },
+        {
+          "id": "4ce1b1adf8cdb1f7d3019e12",
+          "name": "Parque de la China",
+          "contact": {},
+          "location": {
+            "address": "Av. Clavería",
+            "crossStreet": "Ignacio Allende",
+            "lat": 19.464943392023784,
+            "lng": -99.17878746986389,
+            "labeledLatLngs": [
+              {
+                "label": "display",
+                "lat": 19.464943392023784,
+                "lng": -99.17878746986389
+              }
+            ],
+            "distance": 6430,
+            "postalCode": "02080",
+            "cc": "MX",
+            "city": "Azcapotzalco",
+            "state": "Distrito Federal",
+            "country": "México",
+            "formattedAddress": [
+              "Av. Clavería (Ignacio Allende)",
+              "02080 Azcapotzalco, Ciudad de México, DF, Distrito Federal",
+              "México"
+            ]
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d163941735",
+              "name": "Parque",
+              "pluralName": "Parques",
+              "shortName": "Parque",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                "suffix": ".png"
+              },
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "tipCount": 0,
+            "usersCount": 0,
+            "checkinsCount": 0,
+            "visitsCount": 0
+          },
+          "beenHere": {
+            "count": 0,
+            "lastCheckinExpiredAt": 0,
+            "marked": false,
+            "unconfirmedCount": 0
+          },
+          "hereNow": {
+            "count": 0,
+            "summary": "Nadie aquí",
+            "groups": []
+          },
+          "referralId": "v-1533512704",
+          "venueChains": [],
+          "hasPerk": false
+        },
+        {
+          "id": "4cba18bb4c60a093cb2844ca",
+          "name": "Salon China Restaurant",
+          "contact": {},
+          "location": {
+            "address": "Francisco I. Madero 20, Centro Histórico",
+            "crossStreet": "Bolivar y Filomeno Mata",
+            "lat": 19.43383014171256,
+            "lng": -99.13876686055929,
+            "labeledLatLngs": [
+              {
+                "label": "display",
+                "lat": 19.43383014171256,
+                "lng": -99.13876686055929
+              }
+            ],
+            "distance": 1014,
+            "postalCode": "06000",
+            "cc": "MX",
+            "city": "Cuauhtemoc",
+            "state": "Distrito Federal",
+            "country": "México",
+            "formattedAddress": [
+              "Francisco I. Madero 20, Centro Histórico (Bolivar y Filomeno Mata)",
+              "06000 Cuauhtémoc, Distrito Federal",
+              "México"
+            ]
+          },
+          "categories": [
+            {
+              "id": "4bf58dd8d48988d145941735",
+              "name": "Restaurante chino",
+              "pluralName": "Restaurantes chinos",
+              "shortName": "China",
+              "icon": {
+                "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                "suffix": ".png"
+              },
+              "primary": true
+            }
+          ],
+          "verified": false,
+          "stats": {
+            "tipCount": 0,
+            "usersCount": 0,
+            "checkinsCount": 0,
+            "visitsCount": 0
+          },
+          "beenHere": {
+            "count": 0,
+            "lastCheckinExpiredAt": 0,
+            "marked": false,
+            "unconfirmedCount": 0
+          },
+          "hereNow": {
+            "count": 0,
+            "summary": "Nadie aquí",
+            "groups": []
+          },
+          "referralId": "v-1533512704",
+          "venueChains": [],
+          "hasPerk": false
+        }
+      ]
+    }
+  }
