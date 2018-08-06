@@ -1,4 +1,3 @@
-
 //Añadiendo un mapa que comience en determinadas coordenadas
 const mymap = L.map('mapid', {
     center: [19.43,  -99.13],
@@ -6,8 +5,19 @@ const mymap = L.map('mapid', {
     scrollWheelZoom: false
 });
 
-//Añadiendo un marcador al mapa
-//var marker = L.marker([19.413173, -99.161967]).addTo(mymap);
+//Geolocation
+navigator.geolocation.getCurrentPosition(success, error);
+  
+function success(pos) {
+  var crd = pos.coords;
+
+  console.log('Latitude : ' + crd.latitude);
+  console.log('Longitude: ' + crd.longitude);
+};
+
+function error(err) { 
+  console.warn('ERROR(' + err.code + '): ' + err.message);
+};
 
 //Añadiendo street layer to map  con mapbox, para lo cual fue necesario pedir accessToken a mapbox
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -17,74 +27,42 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY29jb3JhbGkiLCJhIjoiY2prZWcyY2d3MHRsbTNrcHE5eWs0b3FyMiJ9.ftq8vFCVHesfiKG5H7Lsuw'
 }).addTo(mymap);
 
-//Añadiendo popup para el evento click en cualquier parte del mapa que informe coordenadas
-let popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
-}
-
-mymap.on('click', onMapClick);
-
-//Web-app credentials provided by FQ
-
-var CLIENT_ID = 'QETGQGDUZHOQ3YADJY3XVMRUSEV3UMV11JFW5TNODYGJBFCQ';
-var CLIENT_SECRET = 'EJ2E1RRCBZVKQG4RDFHDBGG1SGRQ5SVUQQN03LIQMYNS045N';
-
-//Request to FQ for Venues search
-
-const API_ENDPOINT = 'https://api.foursquare.com/v2/venues/search' +
-'?client_id=CLIENT_ID' +
-'&client_secret=CLIENT_SECRET' +
-'&v=20180323' +
-'&ll=LATLON' +
-//Category 
-'&query="cafe"' +
-'&limit=5';
-
-
-
-const tryingAPI = (anything) => {
-document.getElementById("prueba").onclick("click", () => {
-        fetch(API_ENDPOINT).then((response)=> {
-            //return response.json();
-            console.log(response.ok);
-        // }).then((data)=>{
-        //     for (i in data) {
-        //     }
-        //     console.log('Conectada');
-        }).catch((error)=> {
-            console.log('No nos estamos entendiendo');
-        })
-      });
-};
-
-// //let foursquareMarker = L.layerGroup().addTo(mymap);
-
-
 // //Agradecimientos a la API de FQ
-// mymap.attributionControl.addAttribution('<a href="https://foursquare.com/">Places data from Foursquare</a>');
+mymap.attributionControl.addAttribution('<a href="https://foursquare.com/">Places data from Foursquare</a>');
 
 
+let venuesList = [];
+const container = document.getElementById('result');
 
-//Geolocation
+const getRestaurants = (data) => {
+    //Convirtiendo primer objeto en arreglo
+  
+  //console.log(foursquareData);
+  //Recorriendo los objetos del objeto
+  document.getElementById('btn-chinese').addEventListener('click' , (event) => {
+    let result = '';
+    let foursquareData = Object.keys(data);
+    for (i = 0; i < foursquareData.length; i++) {
+      let objectKeys = foursquareData[i];
+      //console.log(objectKeys);
+      let objectVenue = data.response.venues;
+      //console.log(objectVenue);
+      let arrVenueData = objectVenue.map((arrayElement) => {
+          let venueName = arrayElement.name;
+          console.log(venueName);
+          let address = arrayElement.location.address;
+          console.log(address);
+      });
 
-  navigator.geolocation.getCurrentPosition(success, error);
-  
-  function success(pos) {
-    var crd = pos.coords;
-  
-    console.log('Latitude : ' + crd.latitude);
-    console.log('Longitude: ' + crd.longitude);
-  };
-  
-  function error(err) { 
-    console.warn('ERROR(' + err.code + '): ' + err.message);
-  };
-  
+      result += `<div class="card">
+      <p>Lugar: ${address}</p>
+      <div>`
+      ;}
  
+  container.innerHTML = result; 
+
+    });
+
+};
 
 
