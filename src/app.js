@@ -1,13 +1,13 @@
 
 //Añadiendo un mapa que comience en determinadas coordenadas
 const mymap = L.map('mapid', {
-    center: [19.397628,  -99.14022299999999],
-    zoom: 16,
+    center: [19.43,  -99.13],
+    zoom: 13,
     scrollWheelZoom: false
 });
 
 //Añadiendo un marcador al mapa
-var marker = L.marker([19.413173, -99.161967]).addTo(mymap);
+//var marker = L.marker([19.413173, -99.161967]).addTo(mymap);
 
 //Añadiendo street layer to map  con mapbox, para lo cual fue necesario pedir accessToken a mapbox
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -43,18 +43,19 @@ const API_ENDPOINT = 'https://api.foursquare.com/v2/venues/search' +
 '&ll=LATLON' +
 //Category 
 '&query="cafe"' +
-'&limit=4' ;
+'&limit=5';
+
 
 
 const tryingAPI = (anything) => {
 document.getElementById("prueba").onclick("click", () => {
         fetch(API_ENDPOINT).then((response)=> {
-            return response.json();
-        }).then((data)=>{
-            for (i in data) {
-                let name =  response.venues[0].id
-            }
-            console.log('Conectada');
+            //return response.json();
+            console.log(response.ok);
+        // }).then((data)=>{
+        //     for (i in data) {
+        //     }
+        //     console.log('Conectada');
         }).catch((error)=> {
             console.log('No nos estamos entendiendo');
         })
@@ -85,4 +86,5 @@ document.getElementById("prueba").onclick("click", () => {
   };
   
  
+
 
