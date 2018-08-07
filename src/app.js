@@ -31,38 +31,38 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 mymap.attributionControl.addAttribution('<a href="https://foursquare.com/">Places data from Foursquare</a>');
 
 
-let venuesList = [];
+let venuesList = [];    
 const container = document.getElementById('result');
 
 const getRestaurants = (data) => {
-    //Convirtiendo primer objeto en arreglo
-  
-  //console.log(foursquareData);
-  //Recorriendo los objetos del objeto
   document.getElementById('btn-chinese').addEventListener('click' , (event) => {
     let result = '';
-    let foursquareData = Object.keys(data);
-    for (i = 0; i < foursquareData.length; i++) {
-      let objectKeys = foursquareData[i];
-      //console.log(objectKeys);
       let objectVenue = data.response.venues;
       //console.log(objectVenue);
-      let arrVenueData = objectVenue.map((arrayElement) => {
-          let venueName = arrayElement.name;
-          console.log(venueName);
-          let address = arrayElement.location.address;
-          console.log(address);
-      });
-
+for (i = 0; i < objectVenue.length; i++ ) {
+    console.log(objectVenue[i].location.address);
+    console.log(objectVenue[i].name);
       result += `<div class="card">
-      <p>Lugar: ${address}</p>
-      <div>`
-      ;}
- 
-  container.innerHTML = result; 
-
-    });
+                     <p>Nombre:${objectVenue[i].name}</p>
+<p>Dirección:${objectVenue[i].location.address}</p>
+</div>`
+}
+  container.innerHTML = result;
+    
+});
 
 };
 
 
+// <div class="modal" id="myModal">
+//   <div class="modal-dialog">
+//     <div class="modal-content">
+//       <div class="modal-body">
+//         Aquí va la info
+//       </div>
+//       <div class="modal-footer">
+//         <button type="button" class="btn btn-danger" data-dismiss="modal">Regresa</button>
+//       </div>
+//     </div>
+//   </div>
+// </div>
