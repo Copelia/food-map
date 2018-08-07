@@ -30,8 +30,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // //Agradecimientos a la API de FQ
 mymap.attributionControl.addAttribution('<a href="https://foursquare.com/">Places data from Foursquare</a>');
 
-
-let venuesList = [];    
+ 
 const container = document.getElementById('result');
 
 const getRestaurants = (data) => {
@@ -43,9 +42,9 @@ for (i = 0; i < objectVenue.length; i++ ) {
     console.log(objectVenue[i].location.address);
     console.log(objectVenue[i].name);
     result += `<div class="card">
-               <a>Nombre:${objectVenue[i].name}</a>
+               <p>Nombre:${objectVenue[i].name}</p>
                <p>Dirección:${objectVenue[i].location.address}</p>
-               <button type="button" class="picture" class="btn btn-warning">Ver más</button>
+               <button class="btn btn-warning">Ver más</button>
                </div>`
 }
         container.innerHTML = result;
