@@ -6,6 +6,12 @@
  1. Vista introductoria de transición a la página principal
  2. Mapa que se ubica por las coordenadas del dispositivo al que esté conectado.
  3. Menú dropdown para que el usuario pueda seleccionar 3 diferentes opciones de alimentos.
- 3. Una vez hecha la selección, el usuario podrá visualizar en tarjetas, los lugares más cercanos respecto a su ubicación (En construcción).
- 4. Interfaz responsive, amigable con dispositios desktop y mobile.
+ 3. Una vez hecha la selección, el usuario podrá visualizar una lista de lugares correspondientes.
+ 4. Los lugares serán los más cercanos respecto a su ubicación (En construcción).
+ 4. Interfaz responsive, amigable con dispositivos desktop y mobile.
  
+ ## Vistas de página principal
+
+ ![Buscando tipo de comida](src/img/filtro.jpg) 
+ ![Resultados](src/img/results.jpg)
+
